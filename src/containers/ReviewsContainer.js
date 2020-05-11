@@ -5,11 +5,10 @@ import { connect } from 'react-redux'
 class ReviewsContainer extends Component {
 
   render() {
-    console.log(this.props)
     return (
       <div>
         <ReviewInput restaurantId={this.props.restaurant.id} addReview={this.props.addReview}/>
-        <Reviews reviews={this.props.reviews} restaurantId={this.props.restaurant.id}/>
+        <Reviews deleteReview={this.props.deleteReview} reviews={this.props.reviews} restaurantId={this.props.restaurant.id}/>
       </div>
     )
   }
