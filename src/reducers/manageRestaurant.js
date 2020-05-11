@@ -15,7 +15,6 @@ export default function manageRestaurants(state = {restaurants: [], reviews: []}
             return {restaurants}
         
         case "ADD_REVIEW" : 
-            debugger;
             const review = {}
             return {...state, reviews: [...state.reviews, review]}
             //reviews need to have a text component, restaurantId (foreign key), and unique id

@@ -15,11 +15,11 @@ class ReviewInput extends Component {
 
   handleSubmit = e => {
     e.preventDefault()
-    //something like this.props.addReview(this.state)
-    console.log(this.props)
+    this.props.addReview({text: this.state.text, restaurantId: this.props.restaurantId})
   }
 
   render() {
+    console.log(this.props)
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
