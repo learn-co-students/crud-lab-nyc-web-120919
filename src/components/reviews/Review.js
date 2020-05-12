@@ -4,7 +4,7 @@ class Review extends Component {
 
 
   handleDeleteReview = () => {
-    console.log(this.props)
+    this.props.deleteReview(this.props.review.id)
   } 
 
   render() {
